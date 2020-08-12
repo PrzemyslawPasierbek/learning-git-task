@@ -5,10 +5,11 @@ shopping_list = {
 }
 
 print("Shoppinglist")
+amount_products = 0
 for shop in shopping_list:
     print()
     for products in shopping_list.values():
         print()
-    amount_products = len(products)
+    amount_products += len(products)
     print(f"I will go the {shop} and I will buy {products}")
 print(f"Amount of products are {amount_products}")
